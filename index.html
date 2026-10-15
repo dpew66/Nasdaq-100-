@@ -23,7 +23,7 @@ h1 { color: #58a6ff; }
 </head>
 <body>
 <h1>Nasdaq-100 投資儀表板</h1>
-<p>我的個人投資分析工具</p>
+<p>我的個人投資分析工具｜瀏覽日期：<span id="today"></span></p>
 <div class="card">
   <h2>Nasdaq-100 指數</h2>
   <p>等待行情資料</p>
@@ -36,5 +36,9 @@ h1 { color: #58a6ff; }
   <h2>200MA 移動平均線</h2>
   <p>尚未計算</p>
 </div>
+<script>
+document.getElementById('today').textContent =
+  new Date().toLocaleDateString('zh-TW');
+</script>
 </body>
 </html>
